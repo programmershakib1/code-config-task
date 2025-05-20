@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Config</title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <section class="main-grid">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="logo-container">
+            <div class="logo-icon">
+              <i class="fa-brands fa-slack"></i>
+            </div>
+            <div>
+              <p class="logo-subtitle">File Manager For</p>
+              <h2 class="logo-title">Dropbox</h2>
+            </div>
+          </div>
+          <span class="version-badge">1.3.0</span>
+        </div>
+        <div class="sidebar-menu">
+          <div class="menu-item active">
+            <div class="menu-icon">
+              <i class="fa-brands fa-microsoft"></i>
+            </div>
+            <p>All Files</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-icon">
+              <i class="fa-solid fa-image"></i>
+            </div>
+            <p>Photos</p>
+          </div>
+          <h4 class="menu-section-title">Folders</h4>
+          <div class="folder-list">
+            <div class="folder-item">
+              <i class="fa-solid fa-arrow-down"></i>
+              <i class="fa-solid fa-folder-open"></i>
+              <p>Downloads</p>
+            </div>
+            <div class="folder-item subfolder active">
+              <div class="subfolder-icon">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+              <i class="fa-solid fa-folder"></i>
+              <p>Contoso Pr...</p>
+            </div>
+            <div class="folder-item">
+              <i class="fa-solid fa-arrow-down"></i>
+              <i class="fa-solid fa-folder"></i>
+              <p>Contoso Proje...</p>
+            </div>
+            <div class="folder-item">
+              <i class="fa-solid fa-arrow-down"></i>
+              <i class="fa-solid fa-folder"></i>
+              <p>Assets</p>
+            </div>
+            <div class="folder-item">
+              <i class="fa-solid fa-arrow-down"></i>
+              <i class="fa-solid fa-folder"></i>
+              <p>Received Files</p>
+            </div>
+            <div class="folder-item">
+              <i class="fa-solid fa-arrow-down"></i>
+              <i class="fa-solid fa-folder"></i>
+              <p>Weekly Reports</p>
+            </div>
+            <div class="folder-item">
+              <i class="fa-solid fa-arrow-down"></i>
+              <i class="fa-solid fa-folder"></i>
+              <p>Personal</p>
+            </div>
+            <div class="folder-item">
+              <i class="fa-solid fa-arrow-down"></i>
+              <i class="fa-solid fa-folder"></i>
+              <p>Contoso Attac...</p>
+            </div>
+            <div class="folder-item">
+              <i class="fa-solid fa-arrow-down"></i>
+              <i class="fa-solid fa-folder-open"></i>
+              <p>Downloads</p>
+            </div>
+            <div class="folder-item subfolder">
+              <div class="subfolder-icon">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+              <i class="fa-solid fa-folder"></i>
+              <p>Documents</p>
+            </div>
+          </div>
+        </div>
+        <div class="storage-info">
+          <div class="storage-header">
+            <i class="fa-solid fa-cloud-arrow-up storage-icon"></i>
+            <p class="storage-title">Storage</p>
+            <div class="storage-toggle">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
+          <p class="storage-details">1.50 GB of 02 GB</p>
+          <div class="storage-bar">
+            <div class="storage-progress"></div>
+          </div>
+        </div>
+      </aside>
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Navigation -->
+        <nav class="main-nav">
+          <div class="search-bar">
+            <input
+              type="text"
+              placeholder="Search File, Folder, Drive name"
+              class="search-input"
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="nav-actions">
+            <button class="nav-button">
+              <i class="fa-solid fa-arrows-rotate"></i> Refresh
+            </button>
+            <button class="nav-button">
+              <i class="fa-regular fa-moon"></i> Dark Mode
+            </button>
+            <div class="profile-menu">
+              <img
+                class="profile-img"
+                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                alt="profile"
+              />
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
+        </nav>
+        <!-- Content -->
+        <div class="content-area">
+          <!-- Create Section -->
+          <div class="action-grid">
+            <div class="action-card create-button">
+              <div class="action-icon">
+                <div class="action-icon-inner">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <p class="create-title">Create</p>
+            </div>
+            <div class="action-card">
+              <div class="action-icon upload">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
+              <p class="create-title">Upload</p>
+            </div>
+            <div class="action-card">
+              <div class="action-icon folder">
+                <i class="fa-solid fa-folder-plus"></i>
+              </div>
+              <p class="create-title">Create folder</p>
+            </div>
+          </div>
+          <!-- Suggested Section -->
+          <h4 class="section-title">
+            Suggested from my engagement. <i class="fa-solid fa-eye"></i>
+          </h4>
+          <div class="file-grid">
+            <div class="file-card">
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card">
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card">
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card">
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card">
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card">
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+          </div>
+          <!-- All Files Section -->
+          <p class="breadcrumb">All files / Ahanaf / Images / Office</p>
+          <h4 class="section-title">
+            All Files <i class="fa-solid fa-gear"></i>
+          </h4>
+          <div class="file-controls">
+            <div class="filter-buttons">
+              <div class="filter-sort">
+                <span>Sort By: </span>
+                <select name="sortValue">
+                  <option value="name">Name</option>
+                </select>
+              </div>
+              <button class="filter-button">
+                <i class="fa-regular fa-clock"></i> Recent
+              </button>
+              <button class="filter-button">
+                <i class="fa-regular fa-heart"></i> Favorite
+              </button>
+              <button class="filter-button delete">
+                <i class="fa-solid fa-trash"></i> Delete
+              </button>
+            </div>
+            <div class="selection-info">
+              <span>4 Selected</span>
+              <div class="selection-check">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <button class="filter-button">
+                <i class="fa-solid fa-grip-vertical"></i> Grid
+              </button>
+            </div>
+          </div>
+          <div class="file-grid">
+            <div class="file-card selected">
+              <div class="check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card selected active">
+              <div class="check-icon active">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card folder">
+              <div class="folder-icon">
+                <i class="fa-solid fa-folder"></i>
+              </div>
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card selected active">
+              <div class="check-icon active">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card folder">
+              <div class="folder-icon">
+                <i class="fa-solid fa-folder"></i>
+              </div>
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card">
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card selected">
+              <div class="check-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card selected active">
+              <div class="check-icon active">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card">
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card selected active">
+              <div class="check-icon active">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card">
+              <img
+                class="file-img"
+                src="https://image.made-in-china.com/202f0j00dnvqkMYzkBbr/Modern-Bedroom-Home-House-Furniture-King-Size-Adult-Double-Storage-Wooden-Bed.webp"
+                alt="house"
+              />
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="file-card folder">
+              <div class="folder-icon">
+                <i class="fa-solid fa-folder"></i>
+              </div>
+              <div class="file-info">
+                <div>
+                  <p>Foundation pri...</p>
+                  <p class="file-details">JPG.2.31MB</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
